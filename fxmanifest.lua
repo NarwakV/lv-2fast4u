@@ -9,10 +9,10 @@ shared_scripts {
 	'@qb-core/import.lua',
 }
 
-client_script 'client/main.lua'
-client_script 'client/tuner.lua'
+client_script 'client.lua'
+client_script 'tuner.lua'
 
-server_script 'server/main.lua'
+server_script 'server.lua'
 
 
 --[[ --add item in shared.lua

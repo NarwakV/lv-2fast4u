@@ -1,3 +1,5 @@
+local QBCore = exports['qb-core']:GetCoreObject()
+
 local ItemList = { ["licensedrift"] = "licensedrift" }
 RegisterServerEvent('libertyv:server:driftlicense')
 AddEventHandler('libertyv:server:driftlicense', function()

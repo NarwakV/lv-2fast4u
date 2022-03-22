@@ -1,4 +1,4 @@
-Citizen.CreateThread(function()
+--[[ Citizen.CreateThread(function()
   while true do Citizen.Wait(500)
     ped = PlayerPedId()
     vehicle = GetVehiclePedIsIn(ped, false)
@@ -11,7 +11,6 @@ RegisterCommand("stance", function()
     QBCore.Functions.Notify("🚗 Les suspensions sont abaissées au max 🚗") 
 else
   QBCore.Functions.Notify("⛔️ Vous n\'etes pas en voiture ⛔️")
---print("You're not in any vehicle.")
 end
 end)
 
@@ -28,4 +27,4 @@ RegisterCommand("lowgrip", function()
   else
     QBCore.Functions.Notify("⛔️ Vous n\'etes pas en voiture ⛔️")
   end
-end)
+end) ]]

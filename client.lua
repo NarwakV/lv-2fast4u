@@ -1,134 +1,125 @@
 --Ouverture Menu
 RegisterNetEvent('libertyv-driftclub', function()
-    TriggerEvent('nh-context:sendMenu', {
+    exports['qb-menu']:openMenu({
         {
-            id = 1,
-            header = "Menu Drift 2FAST4U",
-            txt = ''
+            header = "Location drift",
+            isMenuHeader = true,
         },
         {
-            id = 2,
             header = "Toyota Supra",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = 'a80',
-                  
+                    model = 'a80'
                 }
             }
         },
         {
-            id = 3,
             header = "Nissan S15",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = 's15',
-                   
+                    model = 's15'
                 }
             }
         },
         {
-            id = 4,
             header = "Nissan 180sx",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = '180sx',
-                   
+                    model = '180sx'
                 }
             }
         },
         {
-            id = 4,
             header = "Nissan 240sx",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = '240sx',           
+                    model = '240sx'
                 }
             }
         },
         {
-            id = 5,
             header = "Honda Civic",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = 'fk2',                    
+                    model = 'fk2'
                 }
             }
         },
         {
-            id = 6,
-            header = "volkswagen Jetta",
+            header = "Volkswagen Jetta",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = 'jetta',                 
+                    model = 'jetta'
                 }
             }
         },
         {
-            id = 7,
             header = "Toyota Chaser",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = 'jzx100',                   
+                    model = 'jzx100'
                 }
             }
         },
         {
-            id = 8,
             header = "Mitsubishi Lancer EVO 9",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = 'cp9a',          
+                    model = 'cp9a'
                 }
             }
         },
         {
-            id = 9,
             header = "Nissan Skyline GTR",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = 'skyline',
-                  
+                    model = 'skyline'
                 }
             }
         },
         {
-            id = 10,
             header = "Nissan S13",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = 'nis13',
+                    model = 'nis13'
                 }
             }
         },
         {
-            id = 11,
             header = "Mazda rx7",
             txt = "INTERDIT EN VILLE",
             params = {
                 event = "libertyv-donnerveh",
                 args = {
-                    model = 'fd',
+                    model = 'fd'
                 }
+            }
+        },
+        {
+            header = "Quitter",
+            txt = "",
+            params = {
+                event = "qb-menu:closeMenu"
             }
         },
     })
@@ -216,7 +207,7 @@ end)
 local blips = {
 
 
-    {title="Drift 2FAST4U", colour=19, id=669, x = vector3(163.09, -3028.86, 6.58)}, -- colour=5 (couleur) , id=313 (id du blips)
+    {title="Drift 2FAST4U", colour=19, id=669, x = vector3(163.09, -3028.86, 6.58)},
    }
        
   Citizen.CreateThread(function()

@@ -1,3 +1,4 @@
+local QBCore = exports['qb-core']:GetCoreObject()
 --Ouverture Menu
 RegisterNetEvent('libertyv-driftclub', function()
     exports['qb-menu']:openMenu({

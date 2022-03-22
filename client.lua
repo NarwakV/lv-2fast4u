@@ -146,7 +146,7 @@ DrawText3Ds = function(x, y, z, text)
 end
 
 --spawn npc
-Citizen.CreateThread(function()
+CreateThread(function()
     SpawnNPC()
 end)
 
@@ -191,7 +191,7 @@ AddEventHandler('libertyv-donnerveh', function(data)
 end)
 
 --event draw text , déclanche menu
-Citizen.CreateThread(function() 
+CreateThread(function() 
     
     while true do
         Citizen.Wait(0)

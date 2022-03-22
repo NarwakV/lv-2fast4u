@@ -1,7 +1,4 @@
-local ItemList = {
-    ["licensedrift"] = "licensedrift"
-}
-
+local ItemList = { ["licensedrift"] = "licensedrift" }
 RegisterServerEvent('libertyv:server:driftlicense')
 AddEventHandler('libertyv:server:driftlicense', function()
     local src = source
@@ -16,7 +13,6 @@ AddEventHandler('libertyv:server:driftlicense', function()
                         TriggerClientEvent('QBCore:Notify', src, "🚗 Selectionne ta voiture de drift 🚗")
                         TriggerClientEvent('libertyv-driftclub', src)
                     else
-                 --       TriggerClientEvent('QBCore:Notify', src, "TEST 2 NO ITEM", 'error')
                         break
                     end
                 end

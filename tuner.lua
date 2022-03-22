@@ -1,4 +1,6 @@
---[[ Citizen.CreateThread(function()
+local QBCore = exports['qb-core']:GetCoreObject()
+
+CreateThread(function()
   while true do Citizen.Wait(500)
     ped = PlayerPedId()
     vehicle = GetVehiclePedIsIn(ped, false)
@@ -27,4 +29,4 @@ RegisterCommand("lowgrip", function()
   else
     QBCore.Functions.Notify("⛔️ Vous n\'etes pas en voiture ⛔️")
   end
-end) ]]
+end) 
